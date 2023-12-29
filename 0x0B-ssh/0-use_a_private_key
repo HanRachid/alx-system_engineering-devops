@@ -1,3 +1,3 @@
 !#/bin/bash
-
+#ssh to my serv 
 ssh -i ~/.ssh/school ubuntu@34.229.254.80
