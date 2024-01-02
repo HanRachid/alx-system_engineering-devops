@@ -17,7 +17,7 @@ if len(sys.argv) == 2:
     USER_ID = userresponse["id"]
     data = {USER_ID: []}
     for task in todoresponse:
-        TASK_COMPLETED_STATUS = str(task["completed"])
+        TASK_COMPLETED_STATUS = task["completed"]
         TASK_TITLE = task["title"]
         new_entry = {
             "task": TASK_TITLE,
