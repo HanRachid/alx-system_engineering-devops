@@ -3,7 +3,6 @@
 gather data from api and structure and print it
 """
 
-
 import requests
 import sys
 
