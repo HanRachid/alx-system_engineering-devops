@@ -2,9 +2,10 @@
 """
 gather data from api and structure and print it
 """
-import sys
+
 
 import requests
+import sys
 
 if len(sys.argv) == 2:
     ruser = requests.get(
@@ -24,7 +25,7 @@ if len(sys.argv) == 2:
         if task["completed"]:
             NUMBER_OF_DONE_TASKS += 1
             DONE_TASKS += "\t " + task["title"] + "\n"
-    DONE_TASKS = DONE_TASKS.rstrip()
+    DONE_TASKS = DONE_TASKS.rstrip("\n")
     output = "Employee {} is done with tasks({}/{}):\n {}".format(
         EMPLOYEE_NAME, NUMBER_OF_DONE_TASKS, TOTAL_NUMBER_OF_TASKS, DONE_TASKS
     )
