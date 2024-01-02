@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+gather data from api and structure and print it 
+"""
 import sys
 
 import requests
