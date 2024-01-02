@@ -24,13 +24,8 @@ if len(sys.argv) == 2:
         if task["completed"]:
             NUMBER_OF_DONE_TASKS += 1
             DONE_TASKS += "\t " + task["title"] + "\n"
-    print(
-        "Employee "
-        + str(EMPLOYEE_NAME)
-        + "is done with tasks ("
-        + str(NUMBER_OF_DONE_TASKS)
-        + "/"
-        + str(TOTAL_NUMBER_OF_TASKS)
-        + "):"
+    DONE_TASKS = DONE_TASKS.rstrip()
+    output = "Employee {} is done with tasks({}/{}):\n {}".format(
+        EMPLOYEE_NAME, NUMBER_OF_DONE_TASKS, NUMBER_OF_DONE_TASKS, DONE_TASKS
     )
-    print(DONE_TASKS)
+    print(output)
