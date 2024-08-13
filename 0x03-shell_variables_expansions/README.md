@@ -1,1 +1,0 @@
-exercices about variables expansion 

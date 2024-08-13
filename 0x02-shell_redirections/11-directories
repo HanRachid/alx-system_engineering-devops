@@ -1,2 +1,0 @@
-#!/bin/bash
-find . -not -name . -type d -print | wc -l
