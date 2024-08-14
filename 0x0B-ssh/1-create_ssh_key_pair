@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#create ssh 4096 bits rsa key pair and copy the public key to a file called publickey 
+ssh-keygen -t rsa -b 4096 -f ./school -N "betty" 
