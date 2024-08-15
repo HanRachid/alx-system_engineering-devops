@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lhat $(pwd) /boot
+ls -la .; ls -la ..; ls -la /boot
