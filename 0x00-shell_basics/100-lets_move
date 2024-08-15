@@ -1,2 +1,2 @@
 #!/bin/bash
-cp [A-Z]* ../
+cp $(ls [A-Z]*) tmp/u/
