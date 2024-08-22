@@ -30,9 +30,10 @@ void exitHandle(char **argv);
 void echoHandle(char **argv);
 void handleCommandWithoutPATH(char **argv);
 int _atoi(char *s);
+void print_env(void);
 
 /* String Handle*/
-int _putchar(char ch);
+int _utchar(char ch);
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
